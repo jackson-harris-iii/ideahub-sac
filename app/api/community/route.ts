@@ -25,7 +25,7 @@ if(b.action==='interest'){
  env.DB!.prepare("INSERT INTO notification_outbox(id,kind,created_at) SELECT ?,'interest',? WHERE EXISTS(SELECT 1 FROM interests WHERE id=? AND visitor=?) ON CONFLICT(id) DO NOTHING").bind(subject,now,b.id,id)
  ]);
  if(!result[0].meta.changes){const saved=await env.DB!.prepare('SELECT visitor FROM interests WHERE id=?').bind(b.id).first<{visitor:string}>();if(saved?.visitor!==id)return fail('Your earlier interests are saved. Please wait an hour before sending more.',429)}
- try{await deliverNotifications()}catch{/* The private interest and notification remain saved. */}
+ try{await deliverNotifications(1,subject)}catch{/* The private interest and notification remain saved. */}
  return reply(req,id,{ok:true},201)
 }
 if(b.action==='vote'){if(!(await publicIdeas()).some(i=>i.id===b.idea))return fail('Please choose an idea from the list.');await env.DB!.prepare("INSERT INTO votes(visitor,idea,updated_at) VALUES(?,?,?) ON CONFLICT(visitor) DO UPDATE SET idea=excluded.idea, updated_at=excluded.updated_at").bind(id,b.idea,Date.now()).run();return reply(req,id,await totals(id))}
@@ -37,7 +37,7 @@ const result=await env.DB!.batch([
  env.DB!.prepare("INSERT INTO research_reports(subject,snapshot,sources,version,created_at,trigger) SELECT ?,?,?,?,?,? WHERE EXISTS(SELECT 1 FROM submissions WHERE id=? AND visitor=?) ON CONFLICT(subject) DO NOTHING").bind(...reportValues(subject,'',b.title+' '+b.problem+' '+b.approach,'submission'),b.id,id),
  env.DB!.prepare("INSERT INTO notification_outbox(id,kind,created_at) SELECT ?,'idea',? WHERE EXISTS(SELECT 1 FROM submissions WHERE id=? AND visitor=?) ON CONFLICT(id) DO NOTHING").bind(subject,now,b.id,id)
 ]);if(!result[0].meta.changes){const saved=await env.DB!.prepare('SELECT visitor FROM submissions WHERE id=?').bind(b.id).first<{visitor:string}>();if(saved?.visitor!==id)return fail('Thanks for sharing ideas! Please wait an hour before sending more.',429)}
-try{await deliverNotifications()}catch{/* Saved outbox remains available for retry. */}return reply(req,id,{ok:true},201)}
+try{await deliverNotifications(1,subject)}catch{/* Saved outbox remains available for retry. */}return reply(req,id,{ok:true},201)}
 if(b.action==='contribute'){
  if(!validId(b.id)||!['support','solution','resources','funding'].includes(b.kind))return fail('Please choose how you would like to help.');
  if(!(await publicIdeas()).some(i=>i.id===b.idea))return fail('Please choose a current public idea.');
@@ -52,6 +52,6 @@ if(b.action==='contribute'){
  env.DB!.prepare("INSERT INTO notification_outbox(id,kind,created_at) SELECT ?,?,? WHERE EXISTS(SELECT 1 FROM contributions WHERE id=? AND visitor=?) ON CONFLICT(id) DO NOTHING").bind(subject,b.kind,now,b.id,id)
  ]);
  if(!result[0].meta.changes){const saved=await env.DB!.prepare('SELECT visitor FROM contributions WHERE id=?').bind(b.id).first<{visitor:string}>();if(saved?.visitor!==id)return fail('Thanks for participating! Please wait an hour before sending more.',429)}
- try{await deliverNotifications()}catch{/* Retry privately; never lose the submission. */}return reply(req,id,{ok:true},201)
+ try{await deliverNotifications(1,subject)}catch{/* Retry privately; never lose the submission. */}return reply(req,id,{ok:true},201)
 }return fail('Unknown action.');
 }catch{return fail('We could not save that yet. Please try again.',503)}}

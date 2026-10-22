@@ -8,3 +8,5 @@ export const notificationOutbox=sqliteTable("notification_outbox",{id:text("id")
 export const moderationEvents=sqliteTable("moderation_events",{id:text("id").primaryKey(),subject:text("subject").notNull(),status:text("status").notNull(),createdAt:integer("created_at").notNull()});
 
 export const interests=sqliteTable("interests",{id:text("id").primaryKey(),visitor:text("visitor").notNull(),name:text("name").notNull().default(""),email:text("email").notNull(),interests:text("interests").notNull(),note:text("note").notNull().default(""),consentVersion:text("consent_version").notNull(),createdAt:integer("created_at").notNull(),status:text("status").notNull().default("new")},table=>[index("interest_visitor_time").on(table.visitor,table.createdAt)]);
+
+export const projectProgress=sqliteTable("project_progress",{idea:text("idea").primaryKey(),status:text("status").notNull().default("idea"),demoUrl:text("demo_url").notNull().default(""),updatedAt:integer("updated_at").notNull()});

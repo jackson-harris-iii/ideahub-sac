@@ -12,9 +12,9 @@ Funding offers are expressions of interest only. No payments, binding pledges, t
 
 Submission, its resource match and its notification job are saved in one D1 batch. A provider failure cannot erase the submission. Existing submissions predating this release are not backfilled into the notification queue; moderation creates their resource match.
 
-The Resend HTTP adapter needs server-side `RESEND_API_KEY`, `NOTIFICATION_FROM` (a verified sender) and `ADMIN_EMAIL` (recipient and owner allowlist). Never put keys in a public config or browser bundle. See [Resend send API](https://resend.com/docs/api-reference/emails/send-email) and [domain setup](https://resend.com/docs/dashboard/domains/introduction). The demo does not currently have the email credentials/sender configured, so jobs remain pending. No inbox delivery has been verified.
+The Resend HTTP adapter needs server-side `RESEND_API_KEY`, `NOTIFICATION_FROM` (a verified sender) and `ADMIN_EMAIL` (owner allowlist). Set `NOTIFICATION_TO` to send alerts to a separate address; it falls back to `ADMIN_EMAIL`. Never put keys in a public config or browser bundle. See [Resend send API](https://resend.com/docs/api-reference/emails/send-email) and [domain setup](https://resend.com/docs/dashboard/domains/introduction). Each installation must supply its own private sending key and verified sender. No credentials are included in this repository.
 
-With configuration present, each submission attempts one pending job. The owner can retry up to ten from admin. Minimum retry delay is one minute, with at most five attempts. Provider idempotency keys avoid duplicates within its retry window. Uncertain jobs older than 23 hours move to manual review rather than risk a second send. `accepted` records provider acceptance, not inbox delivery. There is no background retry scheduler; configure one only after choosing its cadence and budget. Message bodies contain the admin URL and type, not participant contact or submission contents.
+With configuration present, each submission attempts its own saved notification job. The owner can retry up to ten from admin. Minimum retry delay is one minute, with at most five attempts. Provider idempotency keys avoid duplicates within its retry window. Uncertain jobs older than 23 hours move to manual review rather than risk a second send. `accepted` records provider acceptance, not inbox delivery. There is no background retry scheduler; configure one only after choosing its cadence and budget. Message bodies contain the admin URL and type, not participant contact or submission contents.
 
 ## Research
 
@@ -29,3 +29,9 @@ Suggested routine: monthly resource review, weekly deadline checks while relevan
 Back up D1 before destructive migrations; this release only adds tables. Keep production data separate from source exports. Set and communicate a retention period before moving beyond the demo. The initial version has no self-service deletion/contact management; the owner handles requests in the database. Use authenticated operator tools and a documented request trail. Do not export raw D1 records into a public repository.
 
 PostHog records anonymous pageviews and sanitized UTM/referrer data, excluding admin pages, form values and session replay. Do Not Track and Global Privacy Control are respected. The reusable template disables analytics by default; each operator must configure their own project.
+
+## Project progress
+
+The owner can set **Idea**, **Being built**, or **Ready to try** under `/admin` → Project progress. Ready to try requires a public HTTPS demo URL; it means a prototype is available, not that it is production-ready. Progress is separate from moderation. Rejected and pending ideas stay hidden regardless of progress. Votes and their ordering are unchanged.
+
+Use **Send test alert** to check the provider connection (at most one test job per minute). It does not create a public submission. The private email contains only the submission type and admin link, not participant details.
