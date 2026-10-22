@@ -1,0 +1,1 @@
+const current=location.pathname.slice(1)||'guide';document.querySelector(`[data-nav="${current}"]`)?.setAttribute('aria-current','page');if(current==='slides'){const requested=Number(new URLSearchParams(location.search).get('slide')||0);slide=Number.isInteger(requested)&&requested>=0&&requested<sections.length?requested:0;setPresentation(true)}

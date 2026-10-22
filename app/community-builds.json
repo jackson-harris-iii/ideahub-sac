@@ -1,0 +1,22 @@
+[
+  {
+    "id": "glass-onion",
+    "title": "Glass Onion \u00b7 Sac Spending Tracker",
+    "url": "https://glassonion-sac.netlify.app/",
+    "description": "Explore Sacramento homelessness budgets, providers and published results, with links back to public source documents.",
+    "note": "Independent public-interest project. Budget amounts are not the same as actual spending.",
+    "preview": "/community-mark.svg",
+    "previewAlt": "Project preview placeholder; add an authorized screenshot",
+    "previewDate": "placeholder"
+  },
+  {
+    "id": "mercy-holistic-connect",
+    "title": "Mercy Holistic Connect",
+    "url": "https://mercy-holistic-connect.replit.app/",
+    "description": "A visit and intake log for drop-in centers, shelters and outreach teams, with aggregate reporting for stakeholders.",
+    "note": "The public preview describes the workflow. Staff tools require an account; use fictional records when demonstrating.",
+    "preview": "/community-mark.svg",
+    "previewAlt": "Project preview placeholder; add an authorized screenshot",
+    "previewDate": "placeholder"
+  }
+]

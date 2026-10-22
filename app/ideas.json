@@ -1,0 +1,114 @@
+[
+  {
+    "title": "SOQ Coach",
+    "theme": "Work & opportunity",
+    "person": "A state-job applicant needs to answer a confusing Statement of Qualifications.",
+    "demo": "Paste one sample posting and a fictional resume \u2192 draft an answer mapped to each prompt.",
+    "guardrail": "Show missing evidence. Never invent qualifications.",
+    "id": "soq-coach"
+  },
+  {
+    "title": "Benefits Letter Decoder",
+    "theme": "Everyday literacy",
+    "person": "A resident needs to understand a confusing benefits letter.",
+    "demo": "Use a fictional letter \u2192 plain-language summary, next action, and highlighted deadline.",
+    "guardrail": "Quote the source deadline; flag uncertainty and link to the issuing agency.",
+    "id": "benefits-decoder"
+  },
+  {
+    "title": "Scam Check Line",
+    "theme": "Everyday literacy",
+    "person": "A neighbor wants a second opinion on a suspicious text.",
+    "demo": "Paste a sample message \u2192 explain warning signs and offer a safe verification step.",
+    "guardrail": "Say \u201cpossible scam,\u201d not a guarantee. Never open suspicious links.",
+    "id": "scam-check"
+  },
+  {
+    "title": "Heat & Smoke Check-In",
+    "theme": "Access & inclusion",
+    "person": "An isolated resident needs a simple check-in during extreme weather.",
+    "demo": "Simulate one opt-in call \u2192 ask how they are doing and show a sample resource.",
+    "guardrail": "Use test contacts and labeled sample locations; no real emergency dispatch.",
+    "id": "heat-smoke-checkin"
+  },
+  {
+    "title": "Skills Bridge",
+    "theme": "Work & opportunity",
+    "person": "A worker wants to see how their experience transfers to a new role.",
+    "demo": "Enter one occupation \u2192 show three adjacent roles and a short learning plan.",
+    "guardrail": "Use example training data; verify availability before recommending enrollment.",
+    "id": "skills-bridge"
+  },
+  {
+    "title": "Council Agenda, Plain English",
+    "theme": "Everyday literacy",
+    "person": "A neighbor wants to know which local decisions affect them.",
+    "demo": "Paste one agenda excerpt \u2192 summarize two relevant items and link to the source.",
+    "guardrail": "Keep dates and public-comment instructions tied to the source.",
+    "id": "council-agenda"
+  },
+  {
+    "title": "SMS Resource Finder",
+    "theme": "Access & inclusion",
+    "person": "A person with a basic phone needs nearby food or a shower.",
+    "demo": "Use a text-message-style interface \u2192 search five sample resources by need.",
+    "guardrail": "Label the dataset as demo data; show when hours were last checked.",
+    "id": "resource-finder"
+  },
+  {
+    "title": "AI at My Job",
+    "theme": "Work & opportunity",
+    "person": "A workforce counselor needs a practical lesson for one occupation.",
+    "demo": "Choose an occupation \u2192 generate one exercise, one example, and one limitation.",
+    "guardrail": "Use fictional workplace information and include human review.",
+    "id": "ai-at-work"
+  },
+  {
+    "id": "sacvoice",
+    "title": "SacVoice",
+    "theme": "Access & inclusion",
+    "person": "A resident wants to report a broken sidewalk, unsafe intersection, or illegal dumping in their preferred language.",
+    "demo": "Record a voice message \u2192 translate and categorize it \u2192 confirm a mapped location \u2192 prepare a Sacramento 311 request draft.",
+    "guardrail": "Let the resident review the translation and location. The prototype prepares a draft; it does not submit a report automatically."
+  },
+  {
+    "id": "letterlens",
+    "title": "LetterLens",
+    "theme": "Everyday literacy",
+    "person": "Someone needs help understanding a government, school, utility, or housing letter.",
+    "demo": "Upload a sample photo \u2192 explain it in simpler language \u2192 highlight deadlines and next steps \u2192 offer a translated version.",
+    "guardrail": "Show the original wording alongside important dates. Use fictional letters and flag unclear text. Broader than the benefits-only decoder."
+  },
+  {
+    "id": "readysac",
+    "title": "ReadySac",
+    "theme": "Safety & preparedness",
+    "person": "A family wants to practice making decisions during floods, wildfires, smoke events, or extreme heat.",
+    "demo": "Try a five-minute practice scenario \u2192 make interactive choices \u2192 receive a preparedness checklist based on those choices.",
+    "guardrail": "Clearly label scenarios as practice. Use official guidance; this is not a live alert or emergency response service."
+  },
+  {
+    "id": "storypins",
+    "title": "StoryPins",
+    "theme": "Community & culture",
+    "person": "Residents want to preserve and share Sacramento neighborhood history through their own audio stories.",
+    "demo": "Record a short story \u2192 create a transcript and translation \u2192 choose a map pin \u2192 play the neighborhood story.",
+    "guardrail": "Get permission before publishing a recording. Let contributors review transcripts and choose an approximate public location."
+  },
+  {
+    "id": "glass-onion",
+    "title": "Glass Onion · Sac Spending Tracker",
+    "theme": "Community builds",
+    "person": "Explore Sacramento homelessness budgets, providers and published results, with links back to public source documents.",
+    "demo": "Open the linked project to explore what its creators have built and consider what could come next.",
+    "guardrail": "Independent public-interest project. Budget amounts are not the same as actual spending. Linked here as a community build, maintained by its creators."
+  },
+  {
+    "id": "mercy-holistic-connect",
+    "title": "Mercy Holistic Connect",
+    "theme": "Community builds",
+    "person": "A visit and intake log for drop-in centers, shelters and outreach teams, with aggregate reporting for stakeholders.",
+    "demo": "Open the linked project to explore what its creators have built and consider what could come next.",
+    "guardrail": "The public preview describes the workflow. Staff tools require an account; use fictional records when demonstrating. Linked here as a community build, maintained by its creators."
+  }
+]

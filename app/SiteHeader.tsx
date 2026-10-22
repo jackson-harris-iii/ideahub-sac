@@ -1,0 +1,4 @@
+import Link from "next/link";
+import Image from "next/image";
+const links=[["home", "/", "Home"], ["about", "/about", "About"], ["ideas", "/ideas", "Ideas & voting"], ["guide", "/guide", "Guide"], ["slides", "/slides", "Slides"], ["room", "/room", "Room display"], ["submit", "/submit", "Submit an idea"], ["participate", "/participate", "Take part"], ["resources", "/resources", "Resources"], ["join", "/join", "Join us"]];
+export default function SiteHeader({active}:{active:string}){return <header className="site-header"><Link className="brand" href="/"><Image unoptimized src="/community-mark.svg" width="42" height="42" alt="The AI Collective"/><span>IDEA HUB SAC<small>COMMUNITY IDEAS · SACRAMENTO</small></span></Link><nav className="site-nav" aria-label="Main navigation">{links.map(([key,url,label])=><a key={key} href={url} aria-current={active===key?'page':undefined}>{label}</a>)}</nav></header>}

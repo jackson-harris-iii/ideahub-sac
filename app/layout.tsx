@@ -1,0 +1,3 @@
+import type { Metadata } from "next";import "./globals.css";
+export const metadata:Metadata={metadataBase:new URL("https://ideahubsac.org"),title:"Idea Hub Sac | Build something useful together",description:"Bring a Sacramento community need, explore local prototypes, and learn AI by building together. Join the interest list for future build sessions and office hours.",openGraph:{title:"Idea Hub Sac | Build something useful together",description:"Explore community ideas, vote for the most useful, or suggest a local problem worth working on.",type:"website"},icons:{icon:"/community-mark.svg"}};
+export default function Layout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}<script src="/analytics.js" defer /></body></html>}

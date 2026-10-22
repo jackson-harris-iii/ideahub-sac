@@ -1,0 +1,1 @@
+export const interestOptions=[['build','Join a mini hackathon'],['learn','Learn to use AI'],['office-hours','Come to office hours'],['help','Offer skills, space or resources'],['business','Explore AI for my business']] as const;

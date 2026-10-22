@@ -1,0 +1,292 @@
+[
+  {
+    "id": "sac-room",
+    "title": "Sacramento Public Library \u00b7 Sacramento Room",
+    "url": "https://www.saclibrary.org/explore-services/local-history-sacramento-room",
+    "kind": "Public collection",
+    "ideas": [
+      "storypins"
+    ],
+    "status": "Available to explore",
+    "note": "Local photographs, maps, documents and oral-history materials can anchor neighborhood research. The library currently says it is not accepting collection donations. Access does not grant reuse rights.",
+    "next": "Request item-level permission before publishing archival material; invite residents to contribute their own recordings.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "calhum",
+    "title": "California Humanities \u00b7 Connecting California",
+    "url": "https://calhum.org/connecting-california-grants/",
+    "kind": "Funding",
+    "ideas": [
+      "storypins"
+    ],
+    "status": "Closed \u00b7 watch next round",
+    "note": "$1,000\u2013$5,000 for public activities connecting communities. California nonprofits (including fiscally sponsored entities) and public agencies may apply; current grantees are ineligible. Requires a 1:1 non-federal cash/in-kind match. Listed 2026 deadlines ended July 13; future dates unannounced.",
+    "next": "Find an eligible library or nonprofit host and plan story-listening events; a standalone software build is a weaker fit.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "arts",
+    "title": "Sacramento Office of Arts & Culture",
+    "url": "https://www.cityofsacramento.gov/ccs/oac/funding-and-grants",
+    "kind": "Funding",
+    "ideas": [
+      "storypins"
+    ],
+    "status": "Program-specific eligibility",
+    "note": "The city maintains arts and culture funding programs for different applicant types. This is a directory, not a verified open award for StoryPins.",
+    "next": "Ask which future program fits a community storytelling project before drafting an application.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "smallarts",
+    "title": "Small Organization Sustainability Fund",
+    "url": "https://www.cityofsacramento.gov/ccs/oac/funding-and-grants/small-organization-sustainability-fund",
+    "kind": "Funding",
+    "ideas": [
+      "storypins"
+    ],
+    "status": "2026\u201327 awards listed",
+    "note": "Operating support is aimed at small Sacramento County arts/cultural organizations with budgets below $25,000. Award listings do not mean applications are open.",
+    "next": "Consider only with an eligible arts organization; monitor the next notice.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "ready",
+    "title": "Sacramento Ready \u00b7 preparedness resources",
+    "url": "https://sacramentoready.saccounty.gov/us/en/are-you-prepared.html",
+    "kind": "Public guidance",
+    "ideas": [
+      "readysac",
+      "heat-smoke-checkin"
+    ],
+    "status": "Available",
+    "note": "County preparedness materials and links to local emergency-readiness programs provide a starting curriculum.",
+    "next": "Use official content to draft five-minute scenarios, then request review from preparedness educators.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "alerts",
+    "title": "SacAlert \u00b7 official local alerts",
+    "url": "https://sacramentoready.saccounty.gov/us/en/are-you-prepared/emergency-alert-systems.html",
+    "kind": "Public service",
+    "ideas": [
+      "readysac",
+      "heat-smoke-checkin"
+    ],
+    "status": "Available",
+    "note": "SacAlert supports regional emergency notifications by phone, text and email. A demo should direct residents to the official enrollment flow.",
+    "next": "Make official alert enrollment a checklist action; do not present the prototype as an alert service.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "zones",
+    "title": "Sacramento County evacuation zone maps",
+    "url": "https://sacramentoready.saccounty.gov/us/en/prepare/evacuation-zone-maps.html",
+    "kind": "Public data",
+    "ideas": [
+      "readysac"
+    ],
+    "status": "Available",
+    "note": "Official zone maps support preparedness education. A stored exercise is not a current evacuation order.",
+    "next": "Teach people how to find their zone; link to official updates and avoid generating evacuation routes.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "campaigns",
+    "title": "Sacramento Ready \u00b7 seasonal campaigns",
+    "url": "https://sacramentoready.saccounty.gov/",
+    "kind": "Campaign",
+    "ideas": [
+      "readysac",
+      "heat-smoke-checkin"
+    ],
+    "status": "Seasonal \u00b7 verify before use",
+    "note": "The county publishes preparedness campaigns and seasonal cooling, weather and emergency information. Older center announcements can expire.",
+    "next": "Check the dated announcement and confirm operation before sending anyone to a facility.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "aircharts",
+    "title": "Sac Metro Air District \u00b7 air quality action charts",
+    "url": "https://www.airquality.org/residents/public-outreach/wildfire-smoke-information/air-quality-action-charts",
+    "kind": "Public guidance",
+    "ideas": [
+      "readysac",
+      "heat-smoke-checkin"
+    ],
+    "status": "Available",
+    "note": "Multilingual action charts address schools, agencies, businesses and the public.",
+    "next": "Use the appropriate published chart and ask local staff to review translations and contextual guidance.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "smoke",
+    "title": "Sac Metro Air District \u00b7 wildfire smoke resources",
+    "url": "https://www.airquality.org/Communications/Pages/Wildfire-Smoke-Information.aspx",
+    "kind": "Campaign",
+    "ideas": [
+      "readysac",
+      "heat-smoke-checkin"
+    ],
+    "status": "Available",
+    "note": "Public smoke information links to official monitoring and outreach materials.",
+    "next": "Build a plain-language explainer with source and observation timestamps; do not imply personal medical advice.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "cleanair",
+    "title": "Sac Metro Air District \u00b7 wildfire emergency plan",
+    "url": "https://www.airquality.org/Communications/Documents/Wildfire%20Emergency%20Plan%20-%20FINAL.pdf",
+    "kind": "Partner lead",
+    "ideas": [
+      "heat-smoke-checkin",
+      "readysac"
+    ],
+    "status": "Planning reference",
+    "note": "Cleaner-air spaces need suitable filtration and an operating organization. A planning document does not confirm that any particular center is open.",
+    "next": "Seek a community venue and facilities expert; verify hours and filtration before listing a place.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "airnow",
+    "title": "EPA AirNow API",
+    "url": "https://docs.airnowapi.org/",
+    "kind": "Public data",
+    "ideas": [
+      "heat-smoke-checkin"
+    ],
+    "status": "Account required",
+    "note": "Public API access is available through registration. Observations are preliminary and may change; they are not regulatory data.",
+    "next": "Obtain an API account, cache responses, display observation time, and handle missing/stale data explicitly.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "weather",
+    "title": "National Weather Service API",
+    "url": "https://www.weather.gov/documentation/services-web-api",
+    "kind": "Public data",
+    "ideas": [
+      "heat-smoke-checkin",
+      "readysac"
+    ],
+    "status": "Available",
+    "note": "Official forecast, observation and alert endpoints are designed for cache-aware use.",
+    "next": "Use documented endpoints and identifying User-Agent; show timestamps and link to original alerts.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "211",
+    "title": "211 Sacramento \u00b7 resource referrals",
+    "url": "https://www.211sacramento.org/211/get-help/",
+    "kind": "Public service",
+    "ideas": [
+      "resource-finder",
+      "heat-smoke-checkin",
+      "readysac"
+    ],
+    "status": "Available",
+    "note": "Existing multilingual, round-the-clock referral service covers nonprofit and public resources. Public browsing does not establish API access or redistribution rights.",
+    "next": "Start with direct links and human referrals; request permission and an update agreement for structured directory reuse.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "disaster211",
+    "title": "211 Sacramento \u00b7 disaster relief",
+    "url": "https://www.211sacramento.org/211/disaster-relief/",
+    "kind": "Partner lead",
+    "ideas": [
+      "resource-finder",
+      "heat-smoke-checkin",
+      "readysac"
+    ],
+    "status": "Available",
+    "note": "211 works with local emergency management and points to volunteer/donation coordination. These are prospective collaborators, not confirmed partners.",
+    "next": "Ask about unmet referral and volunteer needs before building another intake system.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "food",
+    "title": "Sacramento Food Bank \u00b7 Food Finder",
+    "url": "https://www.sacramentofoodbank.org/find-food",
+    "kind": "Public service",
+    "ideas": [
+      "resource-finder"
+    ],
+    "status": "Available",
+    "note": "A local food distribution locator is already available. Its operator recommends contacting locations to confirm hours, eligibility and procedures.",
+    "next": "Link residents to the locator; obtain permission before copying its records and assign someone to verify changes.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "hsds",
+    "title": "Open Referral \u00b7 Human Services Data Specification",
+    "url": "https://docs.openreferral.org/en/v3.3.1/hsds/overview.html",
+    "kind": "Open standard",
+    "ideas": [
+      "resource-finder"
+    ],
+    "status": "Available",
+    "note": "HSDS structures organizations, services and locations for exchanging human-services information. A standard does not grant permission to use a particular directory.",
+    "next": "Use stable IDs, provenance, verification dates and accessibility/language fields in any permitted local dataset.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "shine",
+    "title": "SMUD Shine",
+    "url": "https://www.smud.org/shine",
+    "kind": "Funding",
+    "ideas": [
+      "readysac",
+      "heat-smoke-checkin"
+    ],
+    "status": "Closed \u00b7 July 31, 2026",
+    "note": "Shine supports eligible incorporated nonprofits serving the SMUD area, with clean-energy and community benefit priorities. Published tiers reach $100,000. Match requirements differ across materials reviewed, so confirm next-round terms.",
+    "next": "Find a nonprofit lead and a concrete resilience/clean-energy outcome. Treat this as a future lead, not available funding.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "shine2026",
+    "title": "SMUD \u00b7 2026 Shine application announcement",
+    "url": "https://www.smud.org/Corporate/About-us/News-and-Media/2026/2026/Apply-now-for-SMUDs-Shine-program",
+    "kind": "Funding",
+    "ideas": [
+      "readysac",
+      "heat-smoke-checkin"
+    ],
+    "status": "Closed \u00b7 July 31, 2026",
+    "note": "The official announcement identifies the June 1\u2013July 31, 2026 application window and $5,000\u2013$100,000 range.",
+    "next": "Watch for the next cycle; do not reuse the expired deadline in outreach.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "foundation",
+    "title": "Sacramento Region Community Foundation",
+    "url": "https://www.sacregcf.org/nonprofits/",
+    "kind": "Funding",
+    "ideas": [
+      "storypins",
+      "readysac",
+      "heat-smoke-checkin",
+      "resource-finder"
+    ],
+    "status": "Calendar \u00b7 individual rounds vary",
+    "note": "The foundation lists nonprofit grants and capacity building, including Big Day of Giving. Several relevant 2026 neighborhood/family rounds are closed. Open arts-specific rounds may be a poor fit for software.",
+    "next": "Match the project population and geography to the exact fund; identify an eligible nonprofit or fiscal sponsor first.",
+    "verified": "2026-10-20"
+  },
+  {
+    "id": "crc",
+    "title": "California Grants Portal \u00b7 Community Resilience Centers",
+    "url": "https://www.grants.ca.gov/grant_categories/housing-community-economic-development/page/2/?order=desc&orderby=title&show_grants=active",
+    "kind": "Funding",
+    "ideas": [
+      "readysac",
+      "heat-smoke-checkin"
+    ],
+    "status": "Closed \u00b7 September 25, 2026",
+    "note": "The listed Round 2 implementation deadline has passed even though the directory labels it active. This is facility/community-resilience funding ($1m\u2013$10m), not a small app grant; eligible leads include nonprofits, agencies and tribal governments.",
+    "next": "Approach a future facility-led coalition about a supporting education or communications component, rather than applying as an app alone.",
+    "verified": "2026-10-20"
+  }
+]

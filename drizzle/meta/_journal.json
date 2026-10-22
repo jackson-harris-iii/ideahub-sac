@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1792440978752,
+      "tag": "0000_magenta_power_pack",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1792533294536,
+      "tag": "0001_serious_crystal",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1792656735629,
+      "tag": "0002_noisy_madame_web",
+      "breakpoints": true
+    }
+  ]
+}

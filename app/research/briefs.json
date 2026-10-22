@@ -1,0 +1,62 @@
+[
+  {
+    "id": "storypins",
+    "title": "StoryPins",
+    "pitch": "Neighborhood stories, told by the people who live here.",
+    "recommendation": "Start with a consent-based listening pilot in one neighborhood.",
+    "mvp": "Five resident-approved recordings, editable transcripts, approximate map pins and a clear removal request process.",
+    "needs": [
+      "A neighborhood host and oral-history adviser",
+      "Bilingual interviewers and transcript reviewers",
+      "Recording space, microphones and accessibility testing"
+    ],
+    "funding": "Connecting California is a plausible future match for public storytelling events with an eligible host. The published rounds are closed; no funding is committed.",
+    "test": "Can five residents record, review and choose what to share? Can another resident find a story without exposing a private address?",
+    "risks": "Obtain specific recording/publication permission, offer pseudonyms and coarse locations, separate public media permission from the code license, and make withdrawal practical."
+  },
+  {
+    "id": "readysac",
+    "title": "ReadySac",
+    "pitch": "Practice a few decisions before an emergency.",
+    "recommendation": "Build a five-minute, clearly labeled preparedness exercise using local official guidance.",
+    "mvp": "One heat/smoke scenario with branching choices, explanation of each choice and a checklist linking to SacAlert and official zone maps.",
+    "needs": [
+      "A preparedness educator to review every scenario",
+      "Family and disability-access reviewers",
+      "A library or community venue for a small facilitated test"
+    ],
+    "funding": "SMUD Shine and future resilience coalitions are partner-led prospects. Current listed rounds are closed and a standalone app is not sufficient eligibility.",
+    "test": "Can families explain their next preparedness step after the exercise? Check source dates and ensure no simulated message resembles a live warning.",
+    "risks": "Never predict evacuation decisions or replace official alerts. Avoid competitive scoring that shames people with fewer resources; offer accessible and low-cost choices."
+  },
+  {
+    "id": "heat-smoke-checkin",
+    "title": "Heat & Smoke Check-In",
+    "pitch": "Help neighbors understand conditions and coordinate a simple check-in.",
+    "recommendation": "Pilot an opt-in buddy check-in with official condition links and visible timestamps.",
+    "mvp": "A condition summary, a voluntary \u201cI\u2019m okay / please check in\u201d interaction, and links to verified local resources. Use simulated check-ins until a real coordinator is assigned.",
+    "needs": [
+      "A community organization responsible for follow-up",
+      "Air-quality and preparedness reviewers",
+      "Multilingual outreach and accessible message design"
+    ],
+    "funding": "Seek in-kind coordination and venue support first. SMUD and resilience-center funding may support a broader eligible program in a future cycle.",
+    "test": "Test stale-data handling and what happens when nobody responds. Agree on a real response protocol before recruiting vulnerable residents.",
+    "risks": "A check-in is not emergency monitoring. Collect no diagnoses or precise home locations in the public board. Never promise response times without staffed coverage."
+  },
+  {
+    "id": "resource-finder",
+    "title": "SMS Resource Finder",
+    "pitch": "Make verified local help easier to find from a basic phone.",
+    "recommendation": "Validate referral usefulness with 211 and a small permissioned directory before paying for live SMS.",
+    "mvp": "A web-based SMS-style conversation over 10 manually verified resources, with language choice, source dates and an easy human-referral exit.",
+    "needs": [
+      "A referral partner and named directory steward",
+      "Multilingual residents testing comprehension",
+      "A permitted data feed and a budget for messaging"
+    ],
+    "funding": "Nonprofit community-service support or a sponsored pilot is more credible than a grant for a generic chatbot. Verify each fund\u2019s geography and applicant requirements.",
+    "test": "Measure correct referrals and dead ends with sample requests. Test outdated hours, no matches and urgent needs; do not infer eligibility.",
+    "risks": "Never scrape a directory on the assumption it is open data. Live SMS has consent, opt-out, carrier registration and per-message costs that require separate setup."
+  }
+]
