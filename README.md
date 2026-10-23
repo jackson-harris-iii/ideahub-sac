@@ -42,3 +42,7 @@ No production database, private submissions, tokens, account email, Site ID or a
 - [idea-hub-projects](https://github.com/jackson-harris-iii/idea-hub-projects): links, maintainers and license status for community projects.
 
 These are separate initial editions, not a published shared package with automatic upgrades. Reusable fixes go to `idea-hub` first and are manually reviewed for the Sacramento edition. The older `community-resource-board` repository remains available as the original prototype.
+
+## Project ownership and private follow-up
+
+Maintainer attribution, working features, help requests and source links are editable in admin. The private participation inbox tracks New → Contacted → Matched → Closed, with notes, a responsible owner and a project match. See [the operator guide](docs/PROJECTS-AND-FOLLOW-UP.md). Follow-up never sends participant messages or changes public approval.
